@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app_wrapper {
+  display: grid;
+
+  grid-template-areas: 
+  "h h"
+  "n c";
+
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+
+  padding-top: 10px;
+}

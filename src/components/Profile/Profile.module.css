@@ -1,0 +1,15 @@
+.content {
+    grid-area: c;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: black;
+  }
+
+  .top_picture {
+    padding: 20px;
+  }
+  
+  .profile_picture {
+    padding: 20px;
+    height: 150px;
+  }
