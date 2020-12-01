@@ -1,0 +1,36 @@
+.item {
+    display: flex;
+}
+
+.item img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.user_name {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.text {
+    margin-top: 60px;
+    margin-left: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.likes_counter {
+    color: rgb(100, 100, 100)
+}
+
+.likes_hr {
+    border-top: 1px;
+    max-width: 950px;
+}
+
+.post_hr {
+    border-top: 1px;
+}
