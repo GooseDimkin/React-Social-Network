@@ -1,0 +1,15 @@
+import s from './Nav.module.css';
+import {NavLink} from 'react-router-dom';
+
+function Nav() {
+    return(
+        <div className={s.nav}>
+            <li><NavLink to='/profile'>Home</NavLink></li>
+            <li><NavLink to='/posts'>Messages</NavLink></li>
+            <li><a href='#'>News</a></li>
+            <li><a href='#'>Settings</a></li>
+        </div>
+    );
+}
+
+export default Nav;

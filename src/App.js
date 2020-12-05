@@ -1,25 +1,24 @@
-import './styles/App.css';
+import './App.css';
 
-import './components/Header/Header.module.css';
-import './components/Nav/Nav.module.css';
-import './components/Profile/Profile.module.css';
-import './components/Profile/MyPosts/MyPosts.module.css';
+import Header from './components/Header';
+import Profile from './components/Profile';
+import Nav from './components/Nav';
+import MyPosts from './components/MyPosts/MyPosts';
 
-import Header from './components/Header/Header';
-import Nav from './components/Nav/Nav';
-import Profile from './components/Profile/Profile';
-import MyPosts from './components/Profile/MyPosts/MyPosts';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <body>
-      <div className='app_wrapper content'>
-        <Header />
-        <Nav />
-        <Profile userName='Дмитрий Лебедев'/>
-        <MyPosts />
-      </div>
-    </body>
+    <BrowserRouter>
+      <body>
+          <Header />
+          <div className='wrapper'>
+              <Nav />
+              <Route path='/profile' component={Profile} />
+              <Route path='/posts' component={MyPosts} />
+          </div>
+      </body>
+    </BrowserRouter>
   );
 }
 

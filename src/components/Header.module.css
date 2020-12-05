@@ -1,0 +1,12 @@
+.header {
+    background-color: #4A76A8;
+}
+
+.header img {
+    height: 50px;
+}
+
+.img_div {
+    max-width: 1000px;
+    margin: auto;
+}

@@ -1,0 +1,30 @@
+.posts {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.postsArea {
+    grid-column: 2/3;
+    margin-top: 15px;
+}
+
+.inputArea {
+    background-color: white;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.inputArea input {
+    width: 95%;
+    padding: 5px;
+}
+
+.button {
+    background-color: #4A76A8;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+}

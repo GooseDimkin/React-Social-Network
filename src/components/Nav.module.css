@@ -1,0 +1,12 @@
+.nav {
+    margin-top: 15px;
+}
+
+.nav li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+}

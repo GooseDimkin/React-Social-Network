@@ -1,0 +1,20 @@
+.post {
+    display: flex;
+}
+
+.post img {
+    height: 80px;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+.postText {
+    margin-top: 65px;
+}
+
+.userName {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 20px;
+    font-weight: 500;
+}
