@@ -1,0 +1,27 @@
+.news_section {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.community_info {
+    display: flex;
+}
+
+.community_info img {
+    height: 80px;
+    border-radius: 100px;
+}
+
+.community_name {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #2A5885;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.news_text {
+    margin-top: 10px;
+}

@@ -6,8 +6,8 @@ function Nav() {
         <div className={s.nav}>
             <li><NavLink to='/profile'>Home</NavLink></li>
             <li><NavLink to='/posts'>Messages</NavLink></li>
-            <li><a href='#'>News</a></li>
-            <li><a href='#'>Settings</a></li>
+            <li><NavLink to='/news'>News</NavLink></li>
+            <li><a href='#'>Settings</a></li> 
         </div>
     );
 }

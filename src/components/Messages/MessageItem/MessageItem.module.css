@@ -1,14 +1,14 @@
-.post {
+.message {
     display: flex;
 }
 
-.post img {
+.message img {
     height: 80px;
     border-radius: 100px;
     padding: 20px;
 }
 
-.postText {
+.messageText {
     margin-top: 65px;
 }
 

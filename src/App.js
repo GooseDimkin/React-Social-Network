@@ -1,9 +1,10 @@
 import './App.css';
 
-import Header from './components/Header';
-import Profile from './components/Profile';
-import Nav from './components/Nav';
-import MyPosts from './components/MyPosts/MyPosts';
+import Header from './components/Header/Header';
+import Profile from './components/Profile/Profile';
+import Nav from './components/Nav/Nav';
+import Messages from './components/Messages/Messages';
+import News from './components/News/News';
 
 import {BrowserRouter, Route} from 'react-router-dom';
 
@@ -14,8 +15,9 @@ function App() {
           <Header />
           <div className='wrapper'>
               <Nav />
-              <Route path='/profile' component={Profile} />
-              <Route path='/posts' component={MyPosts} />
+              <Route path='/profile' component={() => <Profile profile_name='Дмитрий Лебедев' />} />
+              <Route path='/posts' component={Messages} />
+              <Route path='/news' component={News} />
           </div>
       </body>
     </BrowserRouter>

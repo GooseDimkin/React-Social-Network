@@ -1,0 +1,11 @@
+.stories_section {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+}
+
+.stories_section img {
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+}
