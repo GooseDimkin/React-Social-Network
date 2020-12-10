@@ -10,7 +10,7 @@
 }
 
 .community_info img {
-    height: 80px;
+    height: 60px;
     border-radius: 100px;
 }
 
@@ -24,4 +24,9 @@
 
 .news_text {
     margin-top: 10px;
+}
+
+.post_image img{
+    max-width: 550px;
+    margin-top: 15px;
 }

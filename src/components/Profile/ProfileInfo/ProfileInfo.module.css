@@ -1,0 +1,9 @@
+.profile_info a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2A5885;
+}
+
+.profile_info a:hover {
+    text-decoration: underline
+}

@@ -1,4 +1,4 @@
-.profile {
+.section {
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -6,13 +6,33 @@
     margin-bottom: 15px;
 }
 
-.profile img {
-    height: 200px;
-    padding: 20px;
+.Profile_Info_Section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
-.profileName {
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 20px;
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 15px;
+}
+
+.detail_profile_info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 14px;
+}
+
+.infoLabels {
+    list-style: none;
+    margin-left: 20px;
+    color: #828282;
+}
+
+.posts_section {
+    grid-column: 2/3;
+}
+
+.input {
+    margin-top: -15px;
 }

@@ -1,11 +1,19 @@
-.stories_section {
+.wrapper {
     background-color: white;
     border-radius: 5px;
+}
+
+.stories_section {
     display: flex;
 }
 
 .stories_section img {
-    width: 150px;
-    height: 250px;
+    width: 130px;
+    height: 200px;
     border-radius: 10px;
+}
+
+.label {
+    padding-top: 15px;
+    padding-left: 15px;
 }

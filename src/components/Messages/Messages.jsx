@@ -1,18 +1,20 @@
 import s from './Messages.module.css';
-import MessageItem from './MessageItem/MessageItem';
+import Dialog from './Dialog/Dialog';
+import {NavLink} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 function Messages() {
     return(
-        <div className={s.postsArea}>
-            <div className={s.posts}>
-                <MessageItem message_text='Вот дурка блин' user_name='Валерий Жиган' />
-                <MessageItem message_text='Pogchump' user_name='Дмитрий Лебедев' id='owner' />
+        <BrowserRouter>
+            <div className={s.messages_area}>
+                <div className={s.dialog_preview}>
+                    <NavLink to='/messages/valeriy'><img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="avatar"/></NavLink>
+                </div>
+                <div className={s.dialogs}>
+                    <Route path='/messages/valeriy' component={Dialog} />
+                </div>
             </div>
-            <div className={s.inputArea}>
-                <input />
-                <div className={s.button}>Send</div>
-            </div>
-        </div>
+        </BrowserRouter>
     );
 }
 

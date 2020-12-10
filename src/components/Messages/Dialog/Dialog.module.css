@@ -1,0 +1,9 @@
+.dialogs {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.dialogsArea {
+    grid-column: 2/3;
+    margin-top: 15px;
+}
