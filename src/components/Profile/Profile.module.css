@@ -17,18 +17,6 @@
     grid-column-gap: 15px;
 }
 
-.detail_profile_info {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    font-size: 14px;
-}
-
-.infoLabels {
-    list-style: none;
-    margin-left: 20px;
-    color: #828282;
-}
-
 .posts_section {
     grid-column: 2/3;
 }

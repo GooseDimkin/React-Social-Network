@@ -34,16 +34,16 @@ function News() {
          postImage: '',
          groupPicture: 'https://sun9-50.userapi.com/impg/NlxtD9_3HKlQJB1Kwsbie8ZpOzKvihieHAGp7g/QU9nZTwspp8.jpg?size=100x0&quality=96&crop=106,850,1306,1306&sign=f49db82d950c6d6c60cbd4283254b785&ava=1'
         }
-    ]
+    ];
 
-    let newsElement = newsData.map(n => <NewsItem communityName={n.communityName} newsText={n.newsText} postImage={n.postImage} groupPicture={n.groupPicture} />);
+    let newsElements = newsData.map(n => <NewsItem communityName={n.communityName} newsText={n.newsText} postImage={n.postImage} groupPicture={n.groupPicture} />);
 
     return(
         <div className={s.news_area}>
             <div>
                 <InputArea />
                 <Stories />
-                {newsElement}
+                {newsElements}
             </div>
             <div className={s.right_section}>
 

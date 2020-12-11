@@ -1,3 +1,10 @@
+.profileName {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 .profileStatus {
     position: absolute;
     margin-top: 5px;

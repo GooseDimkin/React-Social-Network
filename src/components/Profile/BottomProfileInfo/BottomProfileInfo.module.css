@@ -1,0 +1,21 @@
+.profile_info a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2A5885;
+}
+
+.profile_info a:hover {
+    text-decoration: underline
+}
+
+.infoLabels {
+    list-style: none;
+    margin-left: 20px;
+    color: #828282;
+}
+
+.detail_profile_info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 14px;
+}
