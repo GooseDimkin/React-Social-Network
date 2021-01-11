@@ -1,23 +1,22 @@
-import './App.css';
+import s from './App.module.css';
 
 import Header from './components/Header/Header';
-import Profile from './components/Profile/Profile';
-import Nav from './components/Nav/Nav';
-import News from './components/News/News';
-import Messages from './components/Messages/Messages';
+import Nav from './components/Navigation/Nav';
+
+import Profile from './components/pages/Profile/Profile';
+import News from './components/pages/News/News';
 
 import {BrowserRouter, Route} from 'react-router-dom';
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <body>
-          <Header />
-          <div className='wrapper'>
-              <Nav />
-              <Route path='/profile' component={() => <Profile profile_name='Дмитрий Лебедев' profile_status='Что-то типа статуса.' />} />
-              <Route path='/messages' component={Messages} />
-              <Route path='/news' component={News} />
+          <Header/>
+          <div className={s.content}>
+            <Nav/>
+            <Route path='/profile' render={() => <Profile state={props.state} dispatch={props.dispatch} />}/>
+            <Route path='/news' render={() => <News profileData={props.state.ProfileData} dispatch={props.dispatch} />}/>
           </div>
       </body>
     </BrowserRouter>

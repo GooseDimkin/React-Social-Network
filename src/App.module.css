@@ -1,0 +1,9 @@
+body {
+    background-color: #EDEEF0;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}

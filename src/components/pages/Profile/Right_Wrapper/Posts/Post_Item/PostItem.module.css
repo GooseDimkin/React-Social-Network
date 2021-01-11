@@ -1,0 +1,17 @@
+.user_avatar {
+    height: 50px;
+    border-radius: 100px;
+}
+
+.user_name {
+    position: absolute;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2A5885;
+}
+
+.user_name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.post_input_section {
+    display: flex;
+    margin-left: 5px;
+}
+
+.post_input_section img {
+    cursor: pointer;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.post_input_section input {
+    margin: 5px 0px 0px 12px;
+    height: 20px;
+    width: 387px;
+    border: none;
+}
+
+.post_button {
+    margin-left: 20px;
+    background-color: #6590C0;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+}
+
+.post_button:hover {
+    cursor: pointer;
+    background-color: #6d99cc;
+}

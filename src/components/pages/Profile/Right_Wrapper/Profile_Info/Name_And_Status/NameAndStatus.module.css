@@ -1,0 +1,20 @@
+.profileName {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.profileStatus {
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.online {
+    font-size: 14px;
+    color: #80838a;
+    margin-left: 350px;
+}
+
+.name_and_status {
+    display: flex;
+    border-bottom: solid 1px #E7E8EC;
+}
