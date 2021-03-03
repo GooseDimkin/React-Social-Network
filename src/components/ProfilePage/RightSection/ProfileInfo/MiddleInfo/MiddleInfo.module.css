@@ -1,0 +1,31 @@
+.middle_info {
+    display: flex;
+    line-height: 22px;
+}
+
+.labels {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    color: #828282;
+    margin-right: 100px;
+}
+
+.info {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    color: #2A5885;
+}
+
+.info li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.underline {
+    border-bottom: #E7E8EC solid 1px;
+    margin: 15px -20px 15px -20px;
+}

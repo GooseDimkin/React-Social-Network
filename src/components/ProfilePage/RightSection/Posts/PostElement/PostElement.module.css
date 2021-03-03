@@ -1,0 +1,23 @@
+.post_element img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}
+
+.name {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2A5885;
+}
+
+.name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text {
+    margin-top: 10px;
+}

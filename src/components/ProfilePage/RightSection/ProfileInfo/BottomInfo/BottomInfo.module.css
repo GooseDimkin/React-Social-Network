@@ -1,0 +1,6 @@
+.bottom_info {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: 0 auto;
+}

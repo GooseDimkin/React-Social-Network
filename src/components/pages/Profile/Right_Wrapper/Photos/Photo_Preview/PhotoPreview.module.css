@@ -1,9 +1,0 @@
-.section img {
-    cursor: pointer;
-    height: 122px;
-    width: 122px;
-}
-
-.section:not(:last-child) {
-    margin-right: 10px;
-}

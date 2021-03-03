@@ -1,11 +1,11 @@
-import s from './Header.module.css';
+import style from './Header.module.css'
 
-function Header() {
+function Header(props) {
     return(
-        <div className={s.header}>
-            <div className={s.logo}>
-                <img src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png' alt='logo'/>
-                <input placeholder='Search' className={s.input} />
+        <div className={style.header}>
+            <div className={style.content}>
+                <img className={style.logo} src={props.logo} alt='logo'/>
+                <input className={style.input} type='text'/>
             </div>
         </div>
     );

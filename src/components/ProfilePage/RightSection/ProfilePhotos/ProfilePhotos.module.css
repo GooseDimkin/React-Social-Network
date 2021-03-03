@@ -1,0 +1,15 @@
+.label {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.value {
+    font-size: 14px;
+    color: #828282;
+}
+
+.photos_preview {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}

@@ -1,0 +1,34 @@
+.top_info {
+    width: 550px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.status {
+    font-size: 13px;
+    padding: 5px;
+    margin-left: -5px;
+}
+
+.status:hover {
+    cursor: pointer;
+    background-color: #F0F2F5;
+}
+
+.online {
+    font-size: 13px;
+    color: #80899e;
+}
+
+.name_and_online_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.underline {
+    border-bottom: #E7E8EC solid 1px;
+    margin: 15px 0px 15px 0px;
+}

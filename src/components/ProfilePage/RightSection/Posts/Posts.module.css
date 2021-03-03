@@ -1,0 +1,29 @@
+.input {
+    border: none;
+    width: 100%;
+}
+
+.post_input {
+    display: flex;
+}
+
+.post_input img {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.send_button {
+    border: none;
+    background-color: #5a80ac;
+    border-radius: 5px;
+    color: white;
+    padding: 0px 15px 0px 15px;
+    margin-left: 10px;
+}
+
+.send_button:hover {
+    background-color: #6590C0;
+    cursor: pointer;
+}

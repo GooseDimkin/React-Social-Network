@@ -1,0 +1,24 @@
+.avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+.name {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 5px;
+    color: #2A5885;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.underline {
+    border-bottom: #E7E8EC solid 1px;
+    margin: 30px 0px 15px 0px;
+}

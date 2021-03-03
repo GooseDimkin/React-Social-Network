@@ -1,0 +1,21 @@
+.label_component {
+    text-align: center;
+}
+
+.label_component:hover {
+    cursor: pointer;
+}
+
+.label_component:hover .label {
+    color: #2A5885;
+}
+
+.value {
+    font-size: 20px;
+    color: #2A5885;
+}
+
+.label {
+    font-size: 14px;
+    color: #828282;
+}
