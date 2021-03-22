@@ -10,13 +10,13 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        inputUpdate: (currentText) => dispatch(inputUpdateActionCreator(currentText)),
-        addPost: () => dispatch(addPostActionCreator())
-    }
-}
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         inputUpdate: (currentText) => dispatch(inputUpdateActionCreator(currentText)),
+//         addPost: () => dispatch(addPostActionCreator())
+//     }
+// }
 
-let PostsContainer = connect(mapStateToProps, mapDispatchToProps)(Posts);
+let PostsContainer = connect(mapStateToProps, {addPostActionCreator, inputUpdateActionCreator})(Posts);
 
 export default PostsContainer;

@@ -1,0 +1,6 @@
+.preloader {
+    position: absolute;
+    background-color: white;
+    width: 525px;
+    margin-top: 15px;
+}

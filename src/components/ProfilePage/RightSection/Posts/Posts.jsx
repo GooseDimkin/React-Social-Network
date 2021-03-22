@@ -8,13 +8,22 @@ function Posts(props) {
 
     let ref = React.createRef();
     
+    // let inputUpdate = () => {
+    //     let currentText = ref.current.value;
+    //     props.inputUpdate(currentText);
+    // }
+
+    // let addPost = () => {
+    //     props.addPost();
+    // }
+
     let inputUpdate = () => {
         let currentText = ref.current.value;
-        props.inputUpdate(currentText);
+        props.inputUpdateActionCreator(currentText)
     }
 
     let addPost = () => {
-        props.addPost();
+        props.addPostActionCreator()
     }
 
     let postElement = props.posts.map(p => <PostElement text={p.text} />)

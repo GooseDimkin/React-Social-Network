@@ -1,5 +1,9 @@
+import UsersAPI from './../../api/api';
+
 const INPUT_UPDATE = 'INPUT-UPDATE';
 const ADD_POST = 'ADD-POST';
+const ADD_PROFILE_DATA = 'ADD-PROFILE-DATA';
+const SHOW_LOADING = 'SHOW_LOADING';
 
 let defaultState = {
     currentInputText: '',
@@ -24,7 +28,9 @@ let defaultState = {
         {src: 'https://sun9-61.userapi.com/impg/rsPbOKCNDnj_6EbAFdZbTctCVBIrDWi2Qa0oxQ/XZGKC8CM9Rs.jpg?size=750x749&quality=96&proxy=1&sign=9bc26b26d52e0a060dd642e526123ef0&type=album'},
         {src: 'https://sun9-63.userapi.com/impg/xJmK9v67HBRGQ4re-0MfKLm7j99vVqq5kgPJ_Q/dXJdEQH8i6E.jpg?size=600x500&quality=96&proxy=1&sign=84846d26ad32e71beb03c495f5397b39&type=album'}
     ],
-    posts: []
+    posts: [],
+    anotherProfileData: null,
+    showLoading: false
 }
 
 let ProfilePageReducer = (state = defaultState, action) => {
@@ -43,9 +49,25 @@ let ProfilePageReducer = (state = defaultState, action) => {
                 currentInputText: ''
             }
 
+        case ADD_PROFILE_DATA: 
+            return {
+                ...state,
+                anotherProfileData: action.profileData,
+                showLoading: false
+            }
+        case SHOW_LOADING: 
+            return {
+                ...state,
+                showLoading: action.isShow
+            }
+
         default: 
             return state;
     }
+}
+
+export const showLoadingAC = (isShow) => {
+    return {type: SHOW_LOADING, isShow: isShow}
 }
 
 export const inputUpdateActionCreator = (currentText) => {
@@ -54,6 +76,21 @@ export const inputUpdateActionCreator = (currentText) => {
 
 export const addPostActionCreator = () => {
     return {type: ADD_POST}
+}
+
+export const addProfileDataActionCreator = (profileData) => {
+    return {type: ADD_PROFILE_DATA, profileData: profileData}
+}
+
+
+export const getUserDataThunkCreator = (userId) => {
+    return (dispatch) => {
+        dispatch(showLoadingAC(true));
+        UsersAPI.getUserProfile(userId).then(data => {
+            dispatch(addProfileDataActionCreator(data));
+            dispatch(showLoadingAC(false));
+        })
+    }
 }
 
 export default ProfilePageReducer;

@@ -3,20 +3,20 @@ import style from './App.module.css'
 
 import {BrowserRouter, Route} from 'react-router-dom';
 
-import Header from './components/Header/Header'
+import HeaderContainer from './components/Header/HeaderContainer'
 import Nav from './components/Nav/Nav'
-import ProfilePage from './components/ProfilePage/ProfilePage'
-import Friends from './components/Friends/Friends';
+import ProfilePageContainer from './components/ProfilePage/ProfilePageContainer'
+import FriendsContainer from './components/Friends/FriendsContainer';
 
 function App(props) {
   return (
     <BrowserRouter>
-        <Header logo={props.store.getState().siteData.logo} />
+        <HeaderContainer/>
         <body>
           <div className={style.content}>
               <Nav />
-              <Route path='/profile' render={()=> <ProfilePage state={props.store.getState()} />} />
-              <Route path='/friends' render={()=> <Friends friendsData={props.store.getState().friendsData} />} />
+              <Route path='/profile/:userId' render={()=> <ProfilePageContainer />} />
+              <Route path='/friends' render={()=> <FriendsContainer />} />
           </div>
         </body>
     </BrowserRouter>

@@ -8,7 +8,7 @@ function Nav(props) {
             <NavLink to='/profile'><li>My proflie</li></NavLink>
             <li>News</li>
             <li>Messanger</li>
-            <NavLink to='/friends/all'><li>Friends</li></NavLink>
+            <NavLink to='/friends'><li>Friends</li></NavLink>
             <li>Communities</li>
         </ul>
     );

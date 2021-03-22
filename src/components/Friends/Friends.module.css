@@ -1,0 +1,19 @@
+html {
+    overflow: hidden;
+}
+
+.friends_section {
+    margin-top: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+span {
+    cursor: pointer;
+    padding-right: 5px;
+}
